@@ -62,6 +62,33 @@ function App() {
     }
   }
 
+  /*
+  const incValue = () => {
+    if (counter < 20) {
+      setCounter(counter + 1) // bcoz react will share the update in batch it will still get incremented by 1 only.
+      setCounter(counter + 1)
+      setCounter(counter + 1)
+      setCounter(counter + 1)
+      setError("")
+    } else {
+      setError("🚫 Maximum limit reached.")
+    }
+  }
+  */
+
+  // => To get rid of above we have below solution [just use call back]
+  // const incValue = () => {
+  //   if (counter < 20) {
+  //     setCounter(prevCounter => prevCounter + 1)
+  //     setCounter(prevCounter => prevCounter + 1)
+  //     setCounter(prevCounter => prevCounter + 1)
+  //     setCounter(prevCounter => prevCounter + 1)
+  //     setError("")
+  //   } else {
+  //     setError("🚫 Maximum limit reached.")
+  //   }
+  // }
+
   const decValue = () => {
     if (counter > 0) {
       setCounter(counter - 1)
