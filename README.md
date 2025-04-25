@@ -2,7 +2,7 @@
 2 - npm intsall
 3 - npm run dev || npm run start || npm run build
 4 - npm install tailwindcss @tailwindcss/vite
-5 - npx tailwindcss init -p
+
 
 Notes:
 1. Virtual DOM: React uses(creates) a copy of DOM called virtual DOM & compares it with real (previous || browser DOM) to detect changes & only the changed parts of real DOM are updated (improving performance).
